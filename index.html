@@ -1,0 +1,87 @@
+       <!-- css selector -->
+<!--1 .Simple selector
+2 Combination selector
+3 Attribute selector
+4 Pseudo-class & Pseudo-elements 
+
+1.Simple selector
+a.type selector     eg p{ color:red}
+b.class selector    eg .head{color:green}
+c.id selector       eg #box{color:blue}
+ class ko multie time use kr skate hai id ko ek time hi use krte hai jaise header or footer me use krte h jada
+d.Universal selector 
+denoted by *
+*{
+    color:blue
+}
+#abc*{
+
+    }
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Home Layout</title>
+		<link rel="stylesheet" href="style.css">
+		<script src=""></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+			   <h1>RUPESH TECH</h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">BLOG</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+			<div id="midcontent">
+				<h2>Sub Heading</h2>
+				<img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_640.png" width="200px" class="content-image" alt="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veniam eius architecto ullam cupiditate quam aspernatur x accusantium ex animi odit quisquam sint pariatur minus amet ullam reprehenderit rerum inventore sed officiis voluptas? Dolore, perferendis, minus eum debitis vero ipsam tempora voluptate nam ut autem itaque provident consequatur nobis quia libero! Magni, molestiae, laborum architecto natus inventore facere quis pariatur quia quos quasi quo dicta dolores. Deleniti, facere, fugit sed minus ducimus ut modi voluptatum eaque praesentium saepe aperiam nam quidem laboriosam assumenda voluptate vitae inventore et quibusdam!</p>
+				<ul class="list">
+				   <li>Lorem ipsum dolor sit amet. </li>
+				   <li>Modi nihil in animi necessitatibus.</li>
+				   <li>Consectetur adipisicing elit.</li>
+				   <li>Lorem ipsum dolor sit amet.</li>
+				   <li>Modi nihil in animi dolore natus.</li>
+				</ul>
+				<p class="list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, quam.</p>
+			</div>
+			<div id="sidebar">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">BLOG</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+            <!-- start form -->
+            <form action="">
+                <!-- <label for="">NAME:</label> <input type="text" id="fname" onfocus="focusfn()"><br><br> -->
+                <label for="">NAME:</label> <input type="text" id="fname" class="newclass"><br><br>
+                <label for="">CLASS:</label> <input type="text"  class="newclass"><br><br>
+                <label for="">SUBJECT</label>
+                <select name="fname" id="fname" >
+         <option value="">HTML</option>
+         <option value="">CSS</option>
+         <option value="">PHP</option>
+         <option value="">WORDPRESS</option>
+         <option value="">LARAVEL</option>
+                </select>
+             </form>
+             <!-- end from -->
+			<div id="footer">
+				rupeshtechnology.com@copyright 2024.
+			</div>
+		</div>
+      
+	</body>
+</html>

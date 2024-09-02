@@ -1,0 +1,64 @@
+
+
+<!-- 2 Combination selector
+ a. Descendant selector 
+  b.Direct child Selector
+  c.Adjacent sibiling selector
+  d.General sibiling Selector
+
+  a.Descendant selector 
+  yha parent class or child ko use krte hai parent or child multiple time bhi use kr skte hai 
+  
+  
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Descendant Selectors</title>
+    <style>
+         *{
+            padding: 10px;
+            margin: 0;
+        }
+        body{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .box{
+            border: 2px solid red;
+        }
+        .box{
+            border: 2px solid red;
+        }
+        .box h2{
+            display: inline-block;
+            color: red;
+            border: 2px solid red;
+            background-color: yellow;
+        }
+        /* span{
+            color: blue;
+        } */
+        div p span {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <h1>CSS Descendant Selector   </h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet vero doloremque sed magni rem voluptatem recusandae nobis provident, consectetur vel nihil libero quisquam autem sit id enim deserunt expedita a!</p>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iusto? Porro, deserunt <span>hello</span> beatae. Perferendis corrupti tempore incidunt veniam optio. Consectetur delectus commodi tenetur itaque placeat modi, optio voluptate fugit facilis.</h4>
+    <div class="box">
+            <h2>box heading</h2>
+          
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse nobis commodi aut repellendus <span>Lorem ipsum dolor sit.span</span> tenetur assumenda sunt! Harum temporibus, deserunt numquam ex possimus sapiente exercitationem enim.</p>
+        
+    </div>
+    </div>
+</body>
+</html>

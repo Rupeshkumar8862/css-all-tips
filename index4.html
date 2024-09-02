@@ -1,0 +1,76 @@
+<!-- 3 Attribute selector 
+1.A[attr]        // elemet owith spacefice attribut
+2.A[attr=val]    // attribute whose value is exactly value
+3.A[attr^=val]   // attribute begins value
+4.A[attr=val]    // attribut begins with value or is first in a dash 
+                separatedlist
+5.A[attr$=val]   // attribut end with value
+6.A[attr*=val]   // value occusrs anywhere in attribute
+7.A[attr~=val]    value matches attribute in space separated list       -->
+
+<!-- <table width="500px" border="1" cellpadding="0px" cellspacing="0px"> </table>
+
+<img src="image/logo.png" alt="logo" title="logo of rupeshtechnology" width="200px"> 
+input type="radio" id ="gender" name="gender" value="male"
+-->
+<!-- Attribute width ,border cellpadding
+src, alt ,tittle or eske andar jo 500px 1 ye sb value hai\ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* all select where alt properties use */
+        img[alt]{
+        border: 4px solid red ;
+        }
+          /* all select where tittle properties use */
+          img[title]{
+            border: 4px solid green ;
+          }
+ /* all select where type properties use */
+          input[type]{
+           border: 3px solid blue;
+          }
+
+          /* all select where anchar tag target  properties use */
+
+          a[target]{
+            border: 2px solid teal;
+            color: aliceblue;
+            background-color: gray;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            RUPESH TECH: CSS Attribute
+        </h2>
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_640.png" width="200px" class="content-image" alt="log">
+<p><a href="">Anchar</a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam omnis quod optio pariatur repudiandae adipisci dignissimos autem a deleniti? Odio accusamus dolores dolorem voluptas voluptatum, doloremque quaerat quos modi blanditiis.</p>
+    </div>
+    <form action="">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_640.png" width="200px" class="content-image"  title="js" >
+        <label for="">NAME:</label> <input type="text" id="fname" class="newclass"><br><br>
+        <label for="">CLASS:</label> <input type="text"  class="newclass"><br><br>
+        <label for="">GENDER</label>
+        <input type="radio" id="gender" name="gender" value="male"><label for="">male</label>
+        <input type="radio" id="gender" name="gender" value="female"><label for="">female</label>
+        <br><br>
+        <label for="">SUBJECT</label>
+        
+        <select name="fname" id="fname" >
+ <option value="">HTML</option>
+ <option value="">CSS</option>
+ <option value="">PHP</option>
+ <option value="">WORDPRESS</option>
+ <option value="">LARAVEL</option>
+        </select>
+     </form>
+     <p>Lorem ipsum <a href="" target="">achar2 link</a>dolor sit amet consectetur adipisicing elit. Magnam maiores doloribus quam voluptatum impedit quo officiis, fuga cum debitis officia! Doloribus necessitatibus qui ullam sunt laboriosam voluptates sequi similique. Quo.</p>
+</body>
+</html>

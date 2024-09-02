@@ -1,0 +1,63 @@
+<!-- 2c.Adjacent sibiling selector
+ notes mtlb parent ke just bad wala ko select or effect krega 
+ div+p{
+ color:red
+ }  
+ ul+p{
+ color:redS
+ }  
+ 
+ 2. d. Generall Sibling Selector
+ notes adjacennt dekha just bad hi le rha tha bad chor de rha tha but general me sb lega
+  div~p{
+  color:red;
+  }
+  ul~p{
+  color:red;
+  }
+ 
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ul+p{
+   color: blue;  
+}
+/* mtlb ul ke just bad wala ko le rha h or uske bad bhi h but n le rha hai */
+
+/* Generall Sibling Selector */
+ul~p{
+   color:red
+}
+    </style>
+ </head>
+ <body>
+    <div class="container">
+      <h1>HI !! WELCOME TO RUPESH TECH</h1>
+      <ul>
+         <li>Lorem ipsum dolor sit.</li>
+         <li>Lorem ipsum dolor sit.</li>
+         <li>Lorem ipsum dolor sit.</li>
+         <li>Lorem ipsum dolor sit.</li>
+       
+      </ul>
+      <p class="ptest">
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ullam laborum praesentium repellendus quibusdam numquam porro quod accusamus impedit repellat?
+      </p>
+      <p class="ptest2">
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ullam laborum praesentium repellendus quibusdam numquam porro quod accusamus impedit repellat?
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, tempore.</p>
+    </div>
+
+    <!-- agl parent me na kam krega  -->
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+ </body>
+ </html>

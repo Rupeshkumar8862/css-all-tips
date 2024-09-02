@@ -1,0 +1,50 @@
+
+<!-- 3 Direct Child selector ya child selector
+  > singh wala child selector kahte hai
+
+ul>li {
+background-color:red;
+// mtlb ul ke andar li ka change hoga
+}
+#abc >p{
+    color:green;
+} 
+
+-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        /* dekh sra red ho gya but jb child selector use krenge tb se chil me color hoga */
+            /* #list li{
+         color: red;
+            } */
+
+            #list> li{
+         color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>RUPESH TECH: CSS Child Selector</h1>
+        <ul id="list">
+            <li class="test">Lorem ipsum dolor sit amet.</li>
+            <li class="test">Lorem ipsum dolor sit amet.</li>
+            <li class="test">Lorem ipsum dolor sit amet consectetur.</li>
+            <li class="test">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            <ul class="2nsul">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+               
+            </ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+        </ul>
+    </body>
+    </html>
